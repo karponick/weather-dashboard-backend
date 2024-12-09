@@ -9,7 +9,7 @@ const API_KEY = process.env.API_KEY; // Accessing the API key from the environme
 
 // Use CORS middleware to by pass the CORS error
 app.use(cors({
-    origin: 'http://localhost:3001' // Replace with your frontend's origin
+    origin: 'https://weather-dashboard-frontend-bjwu.onrender.com' // Replace with your frontend's origin
 }));
 
 app.get('/api/city', async (req, res) => {
